@@ -2,5 +2,7 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
     <persistence-unit name="test6_flow" transaction-type="RESOURCE_LOCAL">
 
+        <class>com.company.test6flow.entity.Sender</class>
+        <class>com.company.test6flow.entity.HeadDeside</class>
     </persistence-unit>
 </persistence>

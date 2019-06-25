@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
 
+    <view entity="test6flow_Sender" name="sender-view" extends="_local"/>
+    <view entity="test6flow_HeadDeside" name="headDeside-view" extends="_local"/>
 </views>
