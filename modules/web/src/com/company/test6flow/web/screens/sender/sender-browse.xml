@@ -23,30 +23,45 @@
                 dataLoader="sendersDl">
             <properties include=".*"/>
         </filter>
-        <groupTable id="sendersTable"
-                    width="100%"
-                    dataContainer="sendersDc">
-            <actions>
-                <action id="create" type="create"/>
-                <action id="edit" type="edit"/>
-                <action id="remove" type="remove"/>
-            </actions>
-            <columns>
-                <column id="name"/>
-                <column id="fromDate"/>
-                <column id="toDate"/>
-            </columns>
-            <rowsCount/>
-            <buttonsPanel id="buttonsPanel"
-                          alwaysVisible="true">
-                <button id="createBtn" action="sendersTable.create"/>
-                <button id="editBtn" action="sendersTable.edit"/>
-                <button id="removeBtn" action="sendersTable.remove"/>
-            </buttonsPanel>
-        </groupTable>
+        
+<groupTable id="sendersTable"
+        width="100%"
+        dataContainer="sendersDc">
+    <actions>
+        <action id="create" type="create"/>
+    
+        <action id="edit" type="edit"/>
+    
+        <action id="remove" type="remove"/>
+    
+    </actions>
+    <columns>
+        <column id="name"/>
+    
+        <column id="fromDate"/>
+    
+        <column id="toDate"/>
+    
+        <column id="state"/>
+    
+        <column id="detail"/>
+    
+    </columns>
+    <rowsCount/>
+    <buttonsPanel id="buttonsPanel"
+                  alwaysVisible="true">
+        
+            <button id="createBtn" action="sendersTable.create"/>                
+        
+            <button id="editBtn" action="sendersTable.edit"/>                
+        
+            <button id="removeBtn" action="sendersTable.remove"/>                
+        
+    </buttonsPanel>
+</groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">
             <button action="lookupSelectAction"/>
             <button action="lookupCancelAction"/>
         </hbox>
-    </layout>
+    </layout>                
 </window>
